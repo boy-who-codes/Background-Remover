@@ -1,28 +1,26 @@
 # Live Background Remover in OpenCV Python
+Getting started
 
-how to start 
-```bash
+We first need to create a Npy file that detects a specific color in order to subtract that color from our main video and replace it with our image
+```
 $ python3 trackbar.py
 ```
-
-create your desired penval.npy file using Trackbars and hit 'S' to save 
-
-```bash
+Select your desired colors using Trackbars and hit 'S' to save
+```
 $ python3 test.py 
 ```
-now check that the npy file is detecting your desired color or not
-
-```bash
+Now check to see if the npy file is detecting your desired color
+```
 $ python3 main.py
 ```
-to start the main program
+This command will start the main program
 
-replace bg.jpg with your desired image type
-
-```python
+ you can replace bg.jpg with your desired image type
+```
 video = cv2.VideoCapture(0)
 image = cv2.imread("bg.jpg")
 ```
 change ```cv2.imread("bg.jpg")``` path with your desired image path
 
-Feel Free To  Contribute
+Feel Free To Contribute
+
